@@ -1,0 +1,251 @@
+.wrapper {
+  background-color: #cedeeb;
+}
+
+.navDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: #cedeeb;
+  z-index: 1000;
+}
+
+.navDiv > h2 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.cartDiv {
+  display: flex;
+  cursor: pointer;
+}
+
+.dot {
+  background-color: rgb(255, 0, 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mainDiv {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.mainTable {
+  width: fit-content;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+.mainTable > h1 {
+  margin-bottom: 50px;
+}
+
+.mainTable >h5{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.textDiv {
+  padding: 60px;
+}
+
+.textDiv > h1 {
+  font-size: 3vw;
+  margin-bottom: 30px;
+  font-family: "Inder", Inria Serif;
+}
+
+.textDiv > p {
+  font-size: 1.5vw;
+  font-family: "Inder", Inria Serif;
+}
+
+.imageDiv {
+  width: 100%;
+}
+.imageDiv > img {
+  width: 100%;
+}
+
+.productDiv {
+  padding: 60px;
+  background-color: white;
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 50px;
+}
+
+.cartSummary {
+  margin-top: 50px;
+}
+.cartSummary > button {
+  margin-top: 20px;
+}
+
+.confirmDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.check {
+  width: 20%;
+  margin-top: 50px;
+}
+
+
+
+.loading {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.outOfStock{
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(245, 57, 57);
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .textDiv > h1 {
+    font-size: 4vw;
+  }
+
+  .textDiv > p {
+    font-size: 2vw;
+  }
+
+  .cardDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardDiv > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .textDiv {
+    padding: 40px;
+  }
+
+  .textDiv > h1 {
+    font-size: 5vw;
+  }
+
+  .textDiv > p {
+    font-size: 2.5vw;
+  }
+
+  .cardDiv {
+    gap: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .textDiv {
+    padding: 60px;
+  }
+
+  .textDiv > h1 {
+    font-size: 6vw;
+  }
+
+  .textDiv > p {
+    font-size: 3vw;
+  }
+
+  .cardDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .productDiv {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navDiv {
+    padding: 15px;
+  }
+
+  .mainDiv {
+    margin-top: 0px;
+  }
+
+  .textDiv {
+    padding: 15px;
+  }
+
+  .textDiv > h1 {
+    font-size: 7vw;
+  }
+
+  .textDiv > p {
+    font-size: 3.5vw;
+  }
+
+  .cardDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .productDiv {
+    padding: 30px 10px;
+  }
+
+  .mainTable h1 {
+    font-size: 18px;
+  }
+
+  .mainTable {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
