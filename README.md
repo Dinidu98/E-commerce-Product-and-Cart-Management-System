@@ -1,4 +1,4 @@
-# Project Name:  `E-commerce Product and Cart Management System`
+# E-commerce Product and Cart Management System
 
 # Description:
 `This is a React e-commerce frontend application that allows users to browse products, add them to a cart, and potentially proceed to checkout.`
@@ -44,18 +44,8 @@ jest: For Unit Testing
  npm start `Start the development server. This will typically launch the application at http://localhost:3000/ in your browser.`
 
  CORS configuration:
+`Ensure that the backend has CORS enabled to allow the frontend to communicate with it.`
 
-`Ensure that the backend has CORS enabled to allow the frontend to communicate with it. In the backend Program.cs add the following`
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontend", policy =>
-        policy.WithOrigins("http://localhost:3000")
-              .AllowAnyMethod()
-              .AllowAnyHeader());
-});
-
-app.UseCors("AllowFrontend");
 
 
 # Folder Structure:
